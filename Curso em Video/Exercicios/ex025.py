@@ -3,3 +3,4 @@
 
 nome = str(input('Me diga seu nome completo: ')).strip()
 
+print(f'Seu nome tem Silva? {"SILVA" in nome.upper()}')
