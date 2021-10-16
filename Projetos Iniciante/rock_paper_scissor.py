@@ -6,9 +6,8 @@ choice = str(input('Você deseja jogar [S/N]: ')).upper()
 
 # Loop para que o usuário escolha a opção correta
 while choice != 'S' and choice != 'N':
-    print('ERRO: Opção invalidade, escolha apenas com S ou N. Vamos tentar de novo?')
+    print('\nERRO: Opção invalidade, escolha apenas com S ou N. Vamos tentar de novo?')
     choice = str(input('Você deseja jogar [S/N]: ')).upper()
-    print('\n')
 
 # Se o usuário escolhe jogar
 if choice == 'S':
@@ -19,7 +18,7 @@ if choice == 'S':
     while flag != 1:
 
         # Por quantas rodadas o usuário deseja jogar
-        rounds = int(input('Por quantas rodadas deseja jogar: '))
+        rounds = int(input('\nPor quantas rodadas deseja jogar: '))
         print('\n')
 
         # Variaveis para armazenar de rodadas e o placar
@@ -109,13 +108,12 @@ if choice == 'S':
             print('Não foi dessa vez! \n')
 
         # Perguntar se o usuário deseja jogar novamente
-        again = str(input('Você deseja jogar [S/N]: ')).upper()
+        again = str(input('Você deseja jogar de novo [S/N]: ')).upper()
 
         # Loop para que o usuário escolha a opção correta
         while again != 'S' and again != 'N':
-            print('ERRO: Opção invalidade, escolha apenas com S ou N. Vamos tentar de novo?')
-            again = str(input('Você deseja jogar [S/N]: ')).upper()
-            print('\n')
+            print('\nERRO: Opção invalidade, escolha apenas com S ou N. Vamos tentar de novo?')
+            again = str(input('Você deseja jogar de novo [S/N]: ')).upper()
 
         # Concional para jogar de novo ou sair do jogo
         # Caso o usuário deseje jogar novamente
