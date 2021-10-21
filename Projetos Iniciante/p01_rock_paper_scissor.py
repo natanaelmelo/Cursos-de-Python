@@ -28,6 +28,7 @@ if choice == 'S':
         while game < rounds:
 
             # Escolha do usuário
+            print(f'RODADA {game + 1}')
             user_action = str(input("Faça sua escolha entre pedra, papel ou tesoura: ")).lower()
 
             # Escolha do computador
@@ -37,7 +38,8 @@ if choice == 'S':
             # Determinar o ganhador
             # Quando ambos escolhem a mesma coisa
             if user_action == computer_action:
-                print(f'Você escolheu {user_action} e o compuatdor escolheu {computer_action}, portanto houve um empate!')
+                print(
+                    f'Você escolheu {user_action} e o compuatdor escolheu {computer_action}, portanto houve um empate!')
                 print('Tente de novo! \n')
                 game += 1
 
@@ -45,14 +47,16 @@ if choice == 'S':
             elif user_action == 'pedra':
                 # Computador escolhe papel
                 if computer_action == 'papel':
-                    print(f'Você escolheu {user_action} e o compuatdor escolheu {computer_action}, portanto o computador ganhou e você perdeu!')
+                    print(
+                        f'Você escolheu {user_action} e o compuatdor escolheu {computer_action}, portanto o computador ganhou e você perdeu!')
                     print('Sinto muito! \n')
                     score_comp += 1
                     game += 1
 
                 # Computador escolhe tesoura
                 elif computer_action == 'tesoura':
-                    print(f'Você escolheu {user_action} e o computador escolheu {computer_action}, portanto você ganho e o computador perdeu!')
+                    print(
+                        f'Você escolheu {user_action} e o computador escolheu {computer_action}, portanto você ganho e o computador perdeu!')
                     print('Parabéns! \n')
                     score_user += 1
                     game += 1
@@ -61,14 +65,16 @@ if choice == 'S':
             elif user_action == 'papel':
                 # Computador escolhe pedra
                 if computer_action == 'pedra':
-                    print(f'Você escolheu {user_action} e o compuatdor escolheu {computer_action}, portanto você ganho e o computador perdeu!')
+                    print(
+                        f'Você escolheu {user_action} e o compuatdor escolheu {computer_action}, portanto você ganho e o computador perdeu!')
                     print('Parabéns! \n')
                     score_user += 1
                     game += 1
 
                 # Computador escolhe tesoura
                 elif computer_action == 'tesoura':
-                    print(f'Você escolheu {user_action} e o computador escolheu {computer_action}, portanto o computador ganhou e você perdeu!')
+                    print(
+                        f'Você escolheu {user_action} e o computador escolheu {computer_action}, portanto o computador ganhou e você perdeu!')
                     print('Sinto muito! \n')
                     score_comp += 1
                     game += 1
@@ -77,14 +83,16 @@ if choice == 'S':
             elif user_action == 'tesoura':
                 # Computador escolhe pedra
                 if computer_action == 'pedra':
-                    print(f'Você escolheu {user_action} e o computador escolheu {computer_action}, portanto o computador ganhou e você perdeu!')
+                    print(
+                        f'Você escolheu {user_action} e o computador escolheu {computer_action}, portanto o computador ganhou e você perdeu!')
                     print('Sinto muito! \n')
                     score_comp += 1
                     game += 1
 
                 # Computador escolhe papel
                 elif computer_action == 'papel':
-                    print(f'Você escolheu {user_action} e o computador escolheu {computer_action}, portanto você ganho e o computador perdeu!')
+                    print(
+                        f'Você escolheu {user_action} e o computador escolheu {computer_action}, portanto você ganho e o computador perdeu!')
                     print('Parabéns! \n')
                     score_user += 1
                     game += 1
